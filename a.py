@@ -1,0 +1,1 @@
+print(oct(\oo124))

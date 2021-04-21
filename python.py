@@ -1,4 +1,3 @@
 s = "python"
-for i range(False)
-
-print(i,s[i])
+for i in range(len(s)) :
+    print(i,s[i])

@@ -24,13 +24,18 @@ while (True):
                         if escview==0:
                             break
                 elif choice == "Manage":
-                    print("*****welcome to manage section *****")
-                    change = {}
-                    for i in range(int(input("how many item change : "))):
-                        v=input("enter the item ").split(':') 
-                        stock[v[0]]=eval(v[1])
-                    stock.update(change)
-                    print(stock)
+                     while(True):
+                        print("*****welcome to manage section *****")
+                        change = {}
+                        for i in range(int(input("how many item change : "))):
+                            v=input("enter the item ").split(':') 
+                            stock[v[0]]=eval(v[1])
+                        stock.update(change)
+                        print(stock)
+                        back=int(input("Enter 0 to go back "))
+                        if back==0:
+                            break
+
                 elif choice == "Logout" :
                     print("You have succesfully logged out ")  
                     break

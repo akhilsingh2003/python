@@ -16,8 +16,13 @@ while (True):
             while (True):
                 choice = input("Enter 'View' to see stocks:\n Enter 'Manage' to manage stock:\n Enter the 'Logout' to logout of account :\n ").capitalize()
                 if choice == "View":
-                    print("this stock is available \n")
-                    print(stock)
+                    while(True):
+
+                        print("this stock is available \n")
+                        print(stock)
+                        escview = int(input("enter 0 for go back "))
+                        if escview==0:
+                            break
                 elif choice == "Manage":
                     print("*****welcome to manage section *****")
                     change = {}

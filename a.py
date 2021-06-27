@@ -1,1 +1,1 @@
-print(oct(\oo124))
+print(hex(124)

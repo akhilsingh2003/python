@@ -1,1 +1,1 @@
-            
+print(math.sqrt(16))

@@ -1,10 +1,22 @@
 t=int(input())
 for i in range(t):
     n=int(input())
-    for j in range(n*t):
-        Q,N=input().split()
-        for k in range(n*t):
-            if Q[k]!=Q[k+1] and Q[k]!=Q[k+2] and Q[k+1]!=Q[k+2]:
-                print(k)
-
+    lst=[]
+    lsts=[]
+    lstf=[]
+    for i in range(3*n):
+        s,n=input().split()
+        n=int(n)
+        lsts.append(s)
+        lst.append(n)
+    lsts_set=list(set(lsts))
+    for i in range(len(lsts_set)):
+        lste=[]
+        a=0
+        for k in range(len(lst)):
+            if lsts_set[i]==lsts[k]:
+                lste.append(lst[k])
+                a+=lst[k]
+        lstf.append(str(a))
+    print("".join(sorted(lstf)))            
 
